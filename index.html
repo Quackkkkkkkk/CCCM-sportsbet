@@ -1,11 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    hi
-</body>
+<html>
+    <head>
+        <title>CCCM Sport</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="fonts/Alumni_Sans_Pinstripe/">
+        <link rel="icon" href="assets/logo.png" sizes="16px 16px">
+    
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="script.js"></script>
+    </head>
+    <body style="margin: 0; padding: 0;" class="wrapper">
+        <div class="isnt_landing_wrapper">
+            
+            <div class="nav_Bar">
+                <a href="index.html"><img src="assets/logo.png" width="90" height="90" class="logo"></a>
+                <div class="nav_Button" style="margin-left:400px"><a href="stats.html" class="nav_Button_Text">Stats</a></div>
+                <div class="nav_Button"><a href="draw.html" class="nav_Button_Text">Draw</a></div>
+                <div class="nav_Button"><a href="ladder.html" class="nav_Button_Text">Ladder</a></div>
+                <div class="nav_Button"><a href="tipping.html" class="nav_Button_Text">Tipping</a></div>
+            </div>
+        </div>
+        <div class="hexagon">
+            <div class="news">
+                <img class="main_News">
+                <div class="sub_News_Holder">
+                    <img class="sub_News">
+                    <img class="sub_News">
+                    <img class="sub_News">
+                    <img class="sub_News">
+                    <img class="sub_News">
+                    <img class="sub_News" style="margin-bottom: 0">
+                </div>
+            </div>
+            <div class="schools">
+                <div class="school_Row">
+                    <a href="cccm.html"><img src="assets/logo.png" alt="HTML tutorial" style="width:200px;height:200px;"></a>
+                    <a href="mccns.html"><img src="assets/mccns.png" alt="HTML tutorial" style="width:200px;height:200px;"></a>
+                    <a href="cbhsl.html"><img src="assets/cbhsl.png" alt="HTML tutorial" style="width:200px;height:200px;"></a>
+                </div>
+                <div class="school_Row">
+                    <a href="hccr.html"><img src="assets/hccr.png" alt="HTML tutorial" style="width:200px;height:200px;"></a>
+                    <a href="smcc.html"><img src="assets/smcc.png" alt="HTML tutorial" style="width:200px;height:200px;"></a>
+                    <a href="mcr.html"><img src="assets/mcr.png" alt="HTML tutorial" style="width:200px;height:200px;"></a>
+                </div>
+            </div>
+            <video width="1000" height="600" controls muted autoplay id="myvid">
+                <source src="assets/The_Duck_Song-MtN1YnoL46Q.mp4" type="video/mp4">
+            </video>
+            <script>
+                var video = document.getElementById("myvid");
+                function maxVolume() {
+                    video.volume = 1;
+                }
+            </script>
+            <script>
+                maxVolume()
+                console.log(video.volume)
+            </script>
+        </div>
+    </body>
 </html>
