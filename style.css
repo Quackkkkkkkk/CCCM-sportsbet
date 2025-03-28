@@ -42,8 +42,7 @@ body{
 }
 
 .nav_Button {
-    background-color: lightblue; 
-    border: 1px solid black;
+    border: 0;
     padding: 20px 70.69px;
     color: white;
     text-align: center;
@@ -97,13 +96,44 @@ background-size: 1800% 1800%;
 }
 
 .main_News{
-    height: 800px;
-    width: 800px;
+    height: 650px;
+    width: 650px;
     margin-top: 47px;
     margin-left: 100px;
-    background-color: red;
-    border:1px solid black;
+    background-color: #ffd520;
+    border: 0;
     display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.main_News_Img{
+    display: flex;
+    min-height: 500px;
+    max-height: 500px;
+    min-width: 650px;
+    max-width: 650px;
+    border-radius: 10px;
+}
+
+.main_News_Text_Box{
+    display: flex;
+    height: 250px;
+    width: 600px;
+    background-color: #ffd520;
+    border-radius: 10px
+}
+
+.main_News_Main_Text{
+    font-family: var(--content-font-family);
+}
+
+.main_News_Sub_Text{
+    font-family: var(--content-font-family);
+}
+
+.main_News_Date_Text{
+    font-family: var(--content-font-family);
 }
 
 .sub_News_Holder{
@@ -111,17 +141,43 @@ background-size: 1800% 1800%;
     flex-direction: column;
     align-items: start;
     overflow: scroll;
-    height: 800px;
+    height: 650px;
     margin-top: 47px;
+    margin-left: 150px;
 }
 
 .sub_News{
-    padding: 125px;
+    min-height: 310px;
+    max-height: 310px;
+    min-width: 350px;
+    max-width: 350px;
     margin-bottom: 22px;
-    margin-left: 50px;
-    background-color: red;
-    border:1px solid black;
+    margin-left: 0px;
+    border-radius: 10px;
+    background-color: #ffd520;
+    border: 0;
     display: flex;
+    flex-direction: column;
+}
+
+.sub_News_Img{
+    display: flex;
+    min-height: 210px;
+    max-height: 210px;
+    min-width: 350px;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.sub_News_Text_Box{
+    display: flex;
+    height: 100px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #ffd520;
+}
+
+.sub_News_Text{
 
 }
 
@@ -148,7 +204,7 @@ background-size: 1800% 1800%;
    padding-bottom: 5px;
 }
 
-.hexagon{
+.hexagons_Are_The_Bestagons{
     background-image: url("assets/hexagon.png");
     background-size: 90%;
     background-repeat: repeat-x;
@@ -176,13 +232,13 @@ a{
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.02em !important;
     font-weight: 400;
-    color: black;
+    color: white;
     transition: color 0.3s ease-in;
 }
 
 .nav_Button_Text:hover{
     color: #ffd520;
-    transition: color 0.25s ease-out;
+    transition: color 0.2s ease-out;
 }
 
 .stat_Menu{
@@ -238,24 +294,84 @@ a{
     display: flex;
     font-size: 26px;
     color: white;
-    font-family: "Kanit", sans-serif;
+    font-family: var(--content-font-family);
 }
 
 .stat_Player{
     display: flex;
     color:white;
     font-size: 18px;
-    font-family: "Kanit", sans-serif;
+    font-family: var(--content-font-family);
     margin-top: 20px;
 }
 
 .stat_Sub_Text{
     display: flex;
     color: white;
-    font-family: "Kanit", sans-serif;
+    font-family: var(--content-font-family);
     margin-top: 5px;
     margin-bottom: 5px
 }
+
+.draw_Holder{
+    display: flex;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.draw_Main{
+    display: flex;
+    margin-top: 50px;
+    height: 400px;
+    width: 850px;
+    background-color: #f9f9f9;
+    flex-direction: column;
+}
+
+.draw_Date{
+    display: flex;
+    align-self: center;
+}
+
+.draw_Schools{
+    display:flex;
+    flex-direction: row;
+    margin-top: 100px;
+    align-self: center;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.draw_School{
+    display: flex;
+}
+
+.draw_School_Logo{
+    display: flex;
+}
+
+.draw_School_Name{
+    display: flex;
+}
+
+.draw_Venue{
+    display: flex;
+}
+
+.draw_Bottom{
+    display: flex;
+}
+
+.draw_Tip{
+    display: flex;
+}
+
+.draw_Media{
+    display: flex;
+}
+
+
 
 
 
