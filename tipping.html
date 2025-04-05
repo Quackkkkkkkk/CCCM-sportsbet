@@ -10,6 +10,35 @@
     
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script>
+            const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+            const yValues = [55, 49, 44, 24, 15];
+            const barColors = [
+            "#b91d47",
+            "#00aba9",
+            "#2b5797",
+            "#e8c3b9",
+            "#1e7145"
+            ];
+
+            new Chart("chart1", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+                }]
+            },
+            options: {
+                title: {
+                display: true,
+                text: "World Wide Wine Production 2018"
+                }
+            }
+            });
+        </script>
     </head>
     <body style="margin: 0; padding: 0;" class="wrapper">
         <div class="isnt_landing_wrapper">
@@ -22,8 +51,53 @@
                 <div class="nav_Button"><a href="tipping.html" class="nav_Button_Text">Tipping</a></div>
             </div>
         </div>
-        <div class="hexagons_Are_The_Bestagons">
-            
+        <div class="hexagons_Are_The_Bestagons"></div>
+        <div class="tipping_Holder">
+            <div class="tipping_Main">
+                <div class="tipping_Date_Time">
+                    <div class="tipping_Date">13th March 2025</div>
+                    <div class="tipping_Time">1:00 pm</div>
+                </div>
+                <div class="tipping_Middle">
+                    <div class="tipping_Checkbox"></div>
+                    <div class="tipping_Team"><img src="assets/smcc.png" class="tipping_Logo">SMCC</div>
+                    <div class="tipping_Percentage">67%</div>
+                    <div class="tipping_Circle"><canvas id="chart1" style="width:100%;max-width:700px"></canvas></div>
+                    <div class="tipping_Percentage">33%</div>
+                    <div class="tipping_Team"><img src="assets/cbhsl.png" class="tipping_Logo">CBHSL</div>
+                    <div class="tipping_Checkbox"></div>
+                </div>
+            </div>
+            <div class="tipping_Main">
+                <div class="tipping_Date_Time">
+                    <div class="tipping_Date">13th March 2025</div>
+                    <div class="tipping_Time">1:00 pm</div>
+                </div>
+                <div class="tipping_Middle">
+                    <div class="tipping_Checkbox"></div>
+                    <div class="tipping_Team"><img src="assets/mcr.png" class="tipping_Logo">MCR</div>
+                    <div class="tipping_Percentage">10%</div>
+                    <div class="tipping_Circle"><canvas id="chart2" style="width:100%;max-width:700px"></canvas></div>
+                    <div class="tipping_Percentage">90%</div>
+                    <div class="tipping_Team"><img src="assets/hccr.png" class="tipping_Logo">HCCR</div>
+                    <div class="tipping_Checkbox"></div>
+                </div>
+            </div>
+            <div class="tipping_Main">
+                <div class="tipping_Date_Time">
+                    <div class="tipping_Date">13th March 2025</div>
+                    <div class="tipping_Time">1:50 pm</div>
+                </div>
+                <div class="tipping_Middle">
+                    <div class="tipping_Checkbox"></div>
+                    <div class="tipping_Team"><img src="assets/logo.png" class="tipping_Logo">CCCM</div>
+                    <div class="tipping_Percentage">99%</div>
+                    <div class="tipping_Circle"><canvas id="chart3" style="width:100%;max-width:700px"></canvas></div>
+                    <div class="tipping_Percentage">1%</div>
+                    <div class="tipping_Team"><img src="assets/mccns.png" class="tipping_Logo">MCCNS</div>
+                    <div class="tipping_Checkbox"></div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

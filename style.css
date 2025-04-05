@@ -12,7 +12,7 @@
     --title-color: #000000;
     --content-color: #333c4e;
     --icon-box-color: #333333;
-    --toggle-hover-accent-color: #ffd520;
+    --toggle-hover-accent-color: #ffc510;
     --title-font-family: "Montserrat";
     --title-font-weight: 700;
     --title-font-style: normal;
@@ -21,6 +21,10 @@
     --content-font-family: "Montserrat";
     --content-font-style: normal;
     --content-font-weight: 400;
+}
+
+html{
+    display: flex;
 }
 
 body{
@@ -144,6 +148,7 @@ background-size: 1800% 1800%;
     height: 650px;
     margin-top: 47px;
     margin-left: 150px;
+    border-radius: 10px;
 }
 
 .sub_News{
@@ -313,6 +318,46 @@ a{
     margin-bottom: 5px
 }
 
+.draw_Drops{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 350px;
+    height: 30px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.draw_Drop_Set{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    align-items:center;
+}
+
+.draw_Drop{
+    display: flex;
+    border: 0;
+    background-color:#ffffff;
+    transition: color 0.2s;
+    font-family: var(--content-font-family);
+    font-size: 16px;
+    height: 20px;
+}
+
+.draw_Label{
+    display: flex;
+    font-family: var(--content-font-family);
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.draw_Drop:hover{
+    color: var(--toggle-hover-accent-color);
+    transition: color 0.2s
+}
+
 .draw_Holder{
     display: flex;
     margin-left: 250px;
@@ -322,22 +367,24 @@ a{
 
 .draw_Main{
     display: flex;
-    margin-top: 50px;
-    height: 400px;
+    margin-bottom: 50px;
+    height: 350px;
     width: 850px;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     flex-direction: column;
 }
 
 .draw_Date{
     display: flex;
     align-self: center;
+    font-family: var(--content-font-family);
+    margin-top: 10px
 }
 
 .draw_Schools{
     display:flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 30px;
     align-self: center;
     width: 500px;
     justify-content: space-between;
@@ -345,31 +392,192 @@ a{
 
 .draw_School{
     display: flex;
+    flex-direction: column;
 }
 
 .draw_School_Logo{
     display: flex;
+    max-height: 150px;
+    max-width: 150px;
 }
 
 .draw_School_Name{
     display: flex;
+    align-self: center;
+    font-family: var(--content-font-family);
 }
 
 .draw_Venue{
     display: flex;
+    align-self: center;
+    margin-top: 30px;
+    font-family: var(--content-font-family);
 }
 
 .draw_Bottom{
     display: flex;
+    align-self: center;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 200px;
 }
 
 .draw_Tip{
     display: flex;
+    width: 50px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-family: var(--content-font-family);
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+}
+
+.draw_Tip:hover{
+    transition: color 0.3s;
+    color: var(--toggle-hover-accent-color);
 }
 
 .draw_Media{
     display: flex;
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-family: var(--content-font-family);
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
 }
+
+.draw_Media:hover{
+    transition: color 0.3s;
+    color: var(--toggle-hover-accent-color);
+}
+
+.ladder_Table_Row{
+    border: 2px black solid;
+    border-collapse: collapse;
+    justify-content: center;
+    align-content: center;
+}
+
+.ladder_Table_Data{
+    border: 2px black solid;
+    border-collapse: collapse;
+    min-width: 60px;
+    height: 25px;
+    text-align: center;
+    text-justify: center;
+    padding: 0px 10px;
+}
+
+.ladder_Table_School_Data{
+    border: 2px black solid;
+    border-collapse: collapse;
+    min-width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.ladder_Table{
+    border: 2px black solid;
+    border-collapse: collapse;
+    justify-self: center;
+    font-family: var(--content-font-family);
+    font-size: 26px;
+}
+
+.ladder_Table_Logo{
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.tipping_Holder{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1500px;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.tipping_Main{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    height: 350px;
+    background-color:#e9e9e9;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.tipping_Date_Time{
+    display: flex;
+    align-self: center;
+    margin-top: 10px;
+    flex-direction: row;
+    width: 250px;
+    justify-content: space-evenly;
+}
+
+.tipping_Date{
+    display: flex;
+    font-family: var(--content-font-family);
+    align-self: center;
+}
+
+.tipping_Time{
+    display: flex;
+    font-family: var(--content-font-family);
+    align-self: center;
+}
+
+.tipping_Middle{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--content-font-family);
+}
+
+.tipping_Team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tipping_Logo{
+    max-height: 150px;
+}
+
+.tipping_Percentage{
+    display: flex;
+}
+
+.tipping_Circle{
+    display: flex;
+}
+
+.tipping_Checkbox{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
