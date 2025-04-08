@@ -11,34 +11,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-        <script>
-            const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-            const yValues = [55, 49, 44, 24, 15];
-            const barColors = [
-            "#b91d47",
-            "#00aba9",
-            "#2b5797",
-            "#e8c3b9",
-            "#1e7145"
-            ];
-
-            new Chart("chart1", {
-            type: "pie",
-            data: {
-                labels: xValues,
-                datasets: [{
-                backgroundColor: barColors,
-                data: yValues
-                }]
-            },
-            options: {
-                title: {
-                display: true,
-                text: "World Wide Wine Production 2018"
-                }
-            }
-            });
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body style="margin: 0; padding: 0;" class="wrapper">
         <div class="isnt_landing_wrapper">
@@ -54,6 +27,25 @@
             </div>
         </div>
         <div class="hexagons_Are_The_Bestagons"></div>
+        <div class="tipping_Drops">
+            <div class="tipping_Drop_Set">
+                <div class="tipping_Label">Sport:</div>
+                <select name="sport" id="sport" class="tipping_Drop">
+                    <option value="soccer">Soccer</option>
+                    <option value="touch">Touch</option>
+                </select>
+            </div>
+            <div class="tipping_Drop_Set">
+                <div class="tipping_Label">Age Group:</div>
+                <select name="round" id="round" class="tipping_Drop">
+                    <option value="1">Junior Boys</option>
+                    <option value="2">Junior Girls</option>
+                    <option value="3">Intermediate Boys</option>
+                    <option value="4">Intermediate Girls</option>
+                    <option value="5">Senior Boys</option>
+                </select>
+            </div>
+        </div>
         <div class="tipping_Holder">
             <div class="tipping_Main">
                 <div class="tipping_Date_Time">
@@ -61,13 +53,13 @@
                     <div class="tipping_Time">1:00 pm</div>
                 </div>
                 <div class="tipping_Middle">
-                    <div class="tipping_Checkbox"></div>
-                    <div class="tipping_Team"><img src="assets/smcc.png" class="tipping_Logo">SMCC</div>
+                    <input type="radio" id="cb1" class="tipping_Checkbox">
+                    <div class="tipping_Team"><img src="assets/smcc.png" class="tipping_Logo">Saint Mary's Cathedral</div>
                     <div class="tipping_Percentage">67%</div>
-                    <div class="tipping_Circle"><canvas id="chart1" style="width:100%;max-width:700px"></canvas></div>
+                    <div class="tipping_Circle"><canvas id="chart1"></canvas></div>
                     <div class="tipping_Percentage">33%</div>
-                    <div class="tipping_Team"><img src="assets/cbhsl.png" class="tipping_Logo">CBHSL</div>
-                    <div class="tipping_Checkbox"></div>
+                    <div class="tipping_Team"><img src="assets/cbhsl.png" class="tipping_Logo">Christian Brothers Lewisham</div>
+                    <input type="radio" id="cb2" class="tipping_Checkbox">
                 </div>
             </div>
             <div class="tipping_Main">
@@ -76,13 +68,13 @@
                     <div class="tipping_Time">1:00 pm</div>
                 </div>
                 <div class="tipping_Middle">
-                    <div class="tipping_Checkbox"></div>
-                    <div class="tipping_Team"><img src="assets/mcr.png" class="tipping_Logo">MCR</div>
+                    <input type="radio" id="cb3" class="tipping_Checkbox">
+                    <div class="tipping_Team"><img src="assets/mcr.png" class="tipping_Logo">Marcellin Randwick</div>
                     <div class="tipping_Percentage">10%</div>
                     <div class="tipping_Circle"><canvas id="chart2" style="width:100%;max-width:700px"></canvas></div>
                     <div class="tipping_Percentage">90%</div>
-                    <div class="tipping_Team"><img src="assets/hccr.png" class="tipping_Logo">HCCR</div>
-                    <div class="tipping_Checkbox"></div>
+                    <div class="tipping_Team"><img src="assets/hccr.png" class="tipping_Logo">Holy Cross Ryde</div>
+                    <input type="radio" id="cb4" class="tipping_Checkbox">
                 </div>
             </div>
             <div class="tipping_Main">
@@ -91,15 +83,7 @@
                     <div class="tipping_Time">1:50 pm</div>
                 </div>
                 <div class="tipping_Middle">
-                    <div class="tipping_Checkbox"></div>
-                    <div class="tipping_Team"><img src="assets/logo.png" class="tipping_Logo">CCCM</div>
+                    <input type="radio" id="cb5" class="tipping_Checkbox">
+                    <div class="tipping_Team"><img src="assets/logo.png" class="tipping_Logo">Corpus Christi Maroubra</div>
                     <div class="tipping_Percentage">99%</div>
-                    <div class="tipping_Circle"><canvas id="chart3" style="width:100%;max-width:700px"></canvas></div>
-                    <div class="tipping_Percentage">1%</div>
-                    <div class="tipping_Team"><img src="assets/mccns.png" class="tipping_Logo">MCCNS</div>
-                    <div class="tipping_Checkbox"></div>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+                    <div class="tipping_Circle"><canvas id="chart3" style="width

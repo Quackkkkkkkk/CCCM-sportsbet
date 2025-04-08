@@ -1,15 +1,23 @@
-new Chart("chart1", {
-    type: "pie",
+const config = {
+    type: 'pie',
+    data: data,
+  };
+
+  const ct1 = document.getElementById('chart1');
+
+  new Chart(ct1, {
+    type: 'pie',
     data: {
-      labels: ["h", "i"],
       datasets: [{
-        backgroundColor: ["red", "red"],
-        data: [67, 33]
+        data: [33, 67],
+        borderWidth: 1
       }]
     },
     options: {
-      title: {
-        display: true
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
   });

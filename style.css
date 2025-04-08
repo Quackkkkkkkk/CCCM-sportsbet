@@ -56,7 +56,7 @@ body{
 
 .nav_Buttons{
     justify-content: space-evenly;
-    width: 50vw;
+    width: 52vw;
     display: flex;
     flex-direction: row;
 }
@@ -66,7 +66,7 @@ body{
     color: white;
     text-align: center;
     display: flex;
-    font-size: 2.4vh;
+    font-size: 2.6vh;
     margin-top: 5px;
 }
 
@@ -149,6 +149,7 @@ background-size: 1800% 1800%;
 
 .main_News_Text_Box{
     display: flex;
+    flex-direction: column;
     height: 10vw;
     width: 40vw;
     background-color: var(--toggle-hover-accent-color);
@@ -157,16 +158,24 @@ background-size: 1800% 1800%;
 
 .main_News_Main_Text{
     font-family: var(--content-font-family);
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 4vh;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    margin-top: 0.5vh;
 }
 
 .main_News_Sub_Text{
     font-family: var(--content-font-family);
+    margin-bottom: 1vh;
+    margin-left: 1vh;
 }
 
 .main_News_Date_Text{
     font-family: var(--content-font-family);
+    color: var(--darkest-grey);
+    align-self: end;
+    margin-right: 1vh;
 }
 
 .sub_News_Holder{
@@ -217,10 +226,23 @@ background-size: 1800% 1800%;
     width: 25vw;
     border-radius: 10px;
     background-color: var(--toggle-hover-accent-color);
+    flex-direction: column;
 }
 
 .sub_News_Text{
+    font-family: var(--content-font-family);
+    font-weight: 650;
+    font-size: 3vh;
+    margin-bottom: 2.8vh;
+    margin-left: 1vh;
+    margin-top: 0.5vh;
+}
 
+.sub_News_Date{
+    font-family: var(--content-font-family);
+    color: var(--darkest-grey);
+    align-self: end;
+    margin-right: 1vh;
 }
 
 .schools{
@@ -282,89 +304,133 @@ a{
 }
 
 .nav_Button_Text:hover{
-    color: #ffd520;
+    color: var(--toggle-hover-accent-color);
     transition: color 0.2s ease-out;
 }
 
 .stat_Menu{
-    margin-left: 100px;
-    margin-top: 20px
+    margin-left: 10vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .port{
-    margin-right: 5%;
+    margin-right: 3vw;
+    font-family: var(--content-font-family);
+    border: 0;
+    font-size: 2.5vh;
+    transition: color 0.2s;
+}
+
+.port:hover{
+    color: var(--toggle-hover-accent-color);
+    transition: color 0.15s;
+}
+
+.port_Label{
+    font-size: 2.5vh;
+}
+
+.sport{
+    font-family: var(--content-font-family);
+    border: 0;
+    font-size: 2.5vh;
+}
+
+.sport_Label{
+    font-size: 2.5vh;
 }
 
 .stats{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 150px;
-    margin-right: 0px
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100vw;
+    height: 200vh;
+    margin-bottom: 15vh;
 }
 
 .stat_Box{
-    height: 500px;
-    width: 250px;
-    margin-left: 0px;
-    margin-top: 50px;
+    height: 60vh;
+    width: 20vw;
     background-image: url("assets/fabu.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: end;
+    border: 1px black solid;
 }
 
 .stats_Top{
+    flex-direction: row;
     justify-content: space-evenly;
-    width: 400px;
+    display: flex;
 }
 
 .stats_Middle{
     justify-content: space-evenly;
-    width: 400px;
+    flex-direction: row;
+    display: flex;
 }
 
 .stats_Bottom{
     justify-content: space-evenly;
-    width: 400px;
+    flex-direction: row;
+    display: flex;
 }
 
 .stat_Text{
     display: flex;
     flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 17vw;
+    height: 15vh;
+    font-family: var(--content-font-family);
+    border-top-right-radius: 8vh;
+    position: relative;
 }
 
 .stat_Title_Text{
     display: flex;
-    font-size: 26px;
-    color: white;
-    font-family: var(--content-font-family);
+    font-size: 3vh;
+    margin-top: 0.5vh;
+    font-weight: 700;
+    margin-bottom: 0.5vh;
+    margin-left: 0.5vh;
 }
 
 .stat_Player{
     display: flex;
-    color:white;
-    font-size: 18px;
-    font-family: var(--content-font-family);
-    margin-top: 20px;
+    font-size: 3vh;
+    margin-bottom: 2.5vh;
+    font-weight: 400;
+    margin-left: 0.5vh;
 }
 
 .stat_Sub_Text{
     display: flex;
-    color: white;
-    font-family: var(--content-font-family);
-    margin-top: 5px;
-    margin-bottom: 5px
+    position: absolute;
+    bottom: 1vh;
+    right: 2vh;
+    font-size: 4vh;
+    font-weight: 700;
+    margin-left: 0.5vh;
+    color: var(--toggle-hover-accent-color)
+}
+
+.stat_Age_Group{
+    margin-left: 0.5vh;
+    font-weight: 150;
 }
 
 .draw_Drops{
     display: flex;
-    margin-left: 200px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    width: 350px;
-    height: 30px;
+    margin-left: 13vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    width: 40vw;
     justify-content: space-between;
     background-color: white;
 }
@@ -382,14 +448,13 @@ a{
     background-color:#ffffff;
     transition: color 0.2s;
     font-family: var(--content-font-family);
-    font-size: 16px;
-    height: 20px;
+    font-size: 2.5vh;
 }
 
 .draw_Label{
     display: flex;
     font-family: var(--content-font-family);
-    font-size: 16px;
+    font-size: 2.5vh;
     margin-right: 5px;
 }
 
@@ -400,100 +465,157 @@ a{
 
 .draw_Holder{
     display: flex;
-    margin-left: 250px;
-    margin-bottom: 100px;
     flex-direction: column;
+    height: 130vh;
+    align-items: center;
 }
 
 .draw_Main{
     display: flex;
     margin-bottom: 50px;
-    height: 350px;
-    width: 850px;
-    background-color: #f4f4f4;
+    height: 60vh;
+    width: 75vw;
+    background-color: #e9e9e9;
     flex-direction: column;
+    border-radius: 4vh;
+    font-size: 3vh;
 }
 
 .draw_Date{
     display: flex;
     align-self: center;
     font-family: var(--content-font-family);
-    margin-top: 10px
+    font-size: 2.5vh;
+    margin-top: 1vh;
 }
 
 .draw_Schools{
     display:flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-bottom: 5vh;
+    margin-top: 1vh;
     align-self: center;
-    width: 500px;
+    width: 50vw;
     justify-content: space-between;
 }
 
 .draw_School{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    width: 30vh;
+    text-align: center;
 }
 
 .draw_School_Logo{
     display: flex;
-    max-height: 150px;
-    max-width: 150px;
+    height: 30vh;
+    width: 30vh;
+    align-self: center
 }
 
 .draw_School_Name{
     display: flex;
     align-self: center;
     font-family: var(--content-font-family);
+    font-size: 3vh;
+    font-weight: 600;
 }
 
 .draw_Venue{
     display: flex;
     align-self: center;
-    margin-top: 30px;
     font-family: var(--content-font-family);
+    font-size: 2.5vh;
+    font-weight: 200;
 }
 
 .draw_Bottom{
     display: flex;
     align-self: center;
-    margin-top: 30px;
+    margin-top: 2vh;
     justify-content: space-between;
-    width: 200px;
+    width: 20vw;
 }
 
 .draw_Tip{
     display: flex;
-    width: 50px;
-    height: 30px;
+    width: 5vw;
+    height: 5vh;
     background-color: black;
     color: white;
     font-family: var(--content-font-family);
     align-items: center;
     justify-content: center;
-    transition: color 0.3s;
+    transition: color 0.15s;
+    font-size: 2.5vh;
+    text-decoration: none;
+    font-weight: 200;
 }
 
 .draw_Tip:hover{
-    transition: color 0.3s;
+    transition: color 0.15s;
     color: var(--toggle-hover-accent-color);
 }
 
 .draw_Media{
     display: flex;
-    width: 60px;
-    height: 30px;
+    width: 5vw;
+    height: 5vh;
     background-color: black;
     color: white;
     font-family: var(--content-font-family);
     align-items: center;
     justify-content: center;
-    transition: color 0.3s;
+    transition: color 0.15s;
+    font-size: 2.5vh;
+    text-decoration: none;
+    font-weight: 200;
 }
 
 .draw_Media:hover{
-    transition: color 0.3s;
+    transition: color 0.15s;
     color: var(--toggle-hover-accent-color);
+}
+
+.ladder_Drops{
+    display: flex;
+    margin-left: 14vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    width: 40vw;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.ladder_Drop_Set{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    align-items:center;
+}
+
+.ladder_Drop{
+    display: flex;
+    margin-right: 2vw;
+    background-color:#ffffff;
+    border: 0;
+    transition: color 0.2s;
+    font-family: var(--content-font-family);
+    font-size: 2.5vh;
+}
+
+.ladder_Label{
+    display: flex;
+    font-family: var(--content-font-family);
+    font-size: 2.5vh;
+    margin-right: 1vh;
+    flex-wrap: nowrap;
+}
+
+.ladder_Drop:hover{
+    color: var(--toggle-hover-accent-color);
+    transition: color 0.2s
 }
 
 .ladder_Table_Row{
@@ -506,8 +628,8 @@ a{
 .ladder_Table_Data{
     border: 2px black solid;
     border-collapse: collapse;
-    min-width: 60px;
-    height: 25px;
+    min-width: 5vw;
+    height: 5vh;
     text-align: center;
     text-justify: center;
     padding: 0px 10px;
@@ -516,10 +638,11 @@ a{
 .ladder_Table_School_Data{
     border: 2px black solid;
     border-collapse: collapse;
-    min-width: 100px;
-    height: 30px;
+    width: 12vw;
+    height: 5vh;
     text-align: center;
-    padding: 5px 10px;
+    text-justify: center;
+    padding: 0px 0px;
 }
 
 .ladder_Table{
@@ -531,27 +654,73 @@ a{
 }
 
 .ladder_Table_Logo{
-    max-height: 40px;
-    max-width: 40px;
+    height: 7vh;
+    width: 7vh;
+    justify-content: center;
+    align-content: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.tipping_Drops{
+    display: flex;
+    margin-left: 13vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    width: 40vw;
+    justify-content: space-between;
+    background-color: white;
+    flex-direction: row;
+}
+
+.tipping_Drop_Set{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    align-items:center;
+}
+
+.tipping_Drop{
+    display: flex;
+    margin-right: 2vw;
+    background-color:#ffffff;
+    border: 0;
+    transition: color 0.2s;
+    font-family: var(--content-font-family);
+    font-size: 2.5vh;
+}
+
+.tipping_Label{
+    display: flex;
+    font-family: var(--content-font-family);
+    font-size: 2.5vh;
+    margin-right: 1vh;
+    flex-wrap: nowrap;
+}
+
+.tipping_Drop:hover{
+    color: var(--toggle-hover-accent-color);
+    transition: color 0.2s
 }
 
 .tipping_Holder{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1500px;
-    background-color: white;
-    padding: 20px;
+    height: 160vh;
+    align-items: center;
     justify-content: space-evenly;
 }
 
 .tipping_Main{
     display: flex;
     flex-direction: column;
-    width: 1000px;
-    height: 350px;
+    height: 45vh;
+    width: 75vw;
     background-color:#e9e9e9;
     align-self: center;
+    align-items: center;
+    justify-items: center;
     border-radius: 20px;
 }
 
@@ -579,10 +748,11 @@ a{
 .tipping_Middle{
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    width: 50vw;
     margin-top: 50px;
     justify-content: space-evenly;
     align-items: center;
+    justify-items: center;
     font-family: var(--content-font-family);
 }
 
@@ -590,24 +760,93 @@ a{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    font-size: 3vh;
+    font-weight: 500;
+    width: 20vh;
+    flex-wrap: wrap;
 }
 
 .tipping_Logo{
-    max-height: 150px;
+    height: 20vh;
+    width: 20vh;
 }
 
 .tipping_Percentage{
     display: flex;
+    font-size: 2.2vh;
+    font-weight: 200;
 }
 
 .tipping_Circle{
     display: flex;
+    height: 20vh;
+    width: 20vh;
 }
 
 .tipping_Checkbox{
     display: flex;
+    height: 5vh;
+    width: 5vh;
+    border: 0.2vh black solid;
 }
 
+.school_Drops{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15vw;
+    margin-top: 10vh;
+}
+
+.school_Drop_Label{
+    font-family: var(--content-font-family);
+    font-size: 2.5vh;
+}
+
+.school_Drop{
+    border: 0;
+    font-family: var(--content-font-family);
+    font-size: 2.5vh;
+}
+
+.school_Title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.school_Logo{
+    display: flex;
+    height: 20vw;
+    width: 20vw;
+    background-size: contain;
+}
+
+.school_Name{
+    display: flex;
+    font-size: 10vh;
+    font-weight: 750;
+    width: 50vw;
+}
+
+.school_Holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+.school_Ladder{
+    
+}
+
+.school_Team{
+
+}
+
+.school_Draw{
+
+}
 
 
 
