@@ -473,8 +473,8 @@ a{
 .draw_Main{
     display: flex;
     margin-bottom: 50px;
-    height: 60vh;
-    width: 75vw;
+    height: 55vh;
+    width: 70vw;
     background-color: #e9e9e9;
     flex-direction: column;
     border-radius: 4vh;
@@ -509,8 +509,8 @@ a{
 
 .draw_School_Logo{
     display: flex;
-    height: 30vh;
-    width: 30vh;
+    height: 26vh;
+    width: 26vh;
     align-self: center
 }
 
@@ -796,14 +796,18 @@ a{
     flex-direction: row;
     margin-left: 15vw;
     margin-top: 10vh;
+    margin-bottom: 5vh;
+    border: 0;
 }
 
 .school_Drop_Label{
     font-family: var(--content-font-family);
     font-size: 2.5vh;
+    margin-right: 1vh;
 }
 
 .school_Drop{
+    display: flex;
     border: 0;
     font-family: var(--content-font-family);
     font-size: 2.5vh;
@@ -833,21 +837,166 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100vh;
+    align-items: center;
+    height: 120vh;
 }
 
 .school_Ladder{
-    
+    align-self: center;
+    width: 70vw;
+    border: 0.2vh black solid;
+    border-collapse: collapse;
+}
+
+.school_Ladder_Row{
+    width: 70vw;
+    border: 0.2vh black solid;
+    border-collapse: collapse;
+    height: 5vh;
+}
+
+.school_Ladder_Cell{
+    font-size: 2.5vh;
+    min-width: 8vw;
+    border: 0.2vh black solid;
+    border-collapse: collapse;
+    text-align: center;
+    height: 5vh;
 }
 
 .school_Team{
+    display: flex;
+    height: 35vh;
+    width: 50vw;
+    border-radius: 4vh;
+    background-color: #e9e9e9;
+    font-size: 2vh;
+    padding: 2vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    flex-direction: column;
+}
 
+.school_Team_Title{
+    font-weight: 550;
+    font-size: 2.5vh;
 }
 
 .school_Draw{
-
+    display: flex;
+    height: 90vh;
+    justify-items: space-evenly;
+    flex-direction: column;
 }
 
+
+.school_Draw_Main{
+    display: flex;
+    margin-bottom: 2vh;
+    height: 35vh;
+    width: 60vw;
+    background-color: #e9e9e9;
+    flex-direction: column;
+    border-radius: 4vh;
+    font-size: 2vh;
+}
+
+.school_draw_Date{
+    display: flex;
+    align-self: center;
+    font-family: var(--content-font-family);
+    font-size: 1.5vh;
+    margin-top: 1vh;
+}
+
+.school_draw_Schools{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 3vh;
+    margin-top: 0.5vh;
+    align-self: center;
+    width: 50vw;
+    justify-content: space-between;
+}
+
+.school_draw_School{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30vh;
+    text-align: center;
+}
+
+.school_draw_School_Logo{
+    display: flex;
+    height: 20vh;
+    width: 20vh;
+    align-self: center
+}
+
+.school_draw_School_Name{
+    display: flex;
+    align-self: center;
+    font-family: var(--content-font-family);
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+.school_draw_Venue{
+    display: flex;
+    align-self: center;
+    font-family: var(--content-font-family);
+    font-size: 1.5vh;
+    font-weight: 200;
+}
+
+.school_draw_Bottom{
+    display: flex;
+    align-self: center;
+    margin-top: 1vh;
+    justify-content: space-between;
+    width: 20vw;
+}
+
+.school_draw_Tip{
+    display: flex;
+    width: 3vw;
+    height: 3vh;
+    background-color: black;
+    color: white;
+    font-family: var(--content-font-family);
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s;
+    font-size: 1.5vh;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.school_draw_Tip:hover{
+    transition: color 0.15s;
+    color: var(--toggle-hover-accent-color);
+}
+
+.school_draw_Media{
+    display: flex;
+    width: 3vw;
+    height: 3vh;
+    background-color: black;
+    color: white;
+    font-family: var(--content-font-family);
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s;
+    font-size: 1.5vh;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.school_draw_Media:hover{
+    transition: color 0.15s;
+    color: var(--toggle-hover-accent-color);
+}
 
 
 
