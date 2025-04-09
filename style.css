@@ -131,14 +131,14 @@ background-size: 1800% 1800%;
     box-shadow: 8px 8px 10px var(--darkest-grey);
     transition: box-shadow 0.3s;
     .main_News_Img{
-        background-size: 105%;
+        background-size: 125%;
         transition: background-size 0.3s;
     }
 }
 
 .main_News_Img{
     display: flex;
-    background-size: 100%;
+    background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
     height: 30vw;
@@ -204,14 +204,14 @@ background-size: 1800% 1800%;
     box-shadow: 8px 8px 10px var(--darkest-grey);
     transition: box-shadow 0.3s;
     .sub_News_Img{
-        background-size: 105%;
+        background-size: 120%;
         transition: background-size 0.3s;
     }
 }
 
 .sub_News_Img{
     display: flex;
-    background-size: 100%;
+    background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
     height: 14vw;
@@ -354,7 +354,7 @@ a{
 .stat_Box{
     height: 60vh;
     width: 20vw;
-    background-image: url("assets/fabu.png");
+    background-image: url("assets/dom.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -879,7 +879,7 @@ a{
 
 .school_Team_Title{
     font-weight: 550;
-    font-size: 2.5vh;
+    font-size: 3vh;
 }
 
 .school_Draw{
@@ -893,19 +893,19 @@ a{
 .school_Draw_Main{
     display: flex;
     margin-bottom: 2vh;
-    height: 35vh;
+    height: 40vh;
     width: 60vw;
     background-color: #e9e9e9;
     flex-direction: column;
     border-radius: 4vh;
-    font-size: 2vh;
+    font-size: 2.5vh;
 }
 
 .school_draw_Date{
     display: flex;
     align-self: center;
     font-family: var(--content-font-family);
-    font-size: 1.5vh;
+    font-size: 2vh;
     margin-top: 1vh;
 }
 
@@ -938,7 +938,7 @@ a{
     display: flex;
     align-self: center;
     font-family: var(--content-font-family);
-    font-size: 2vh;
+    font-size: 2.5vh;
     font-weight: 600;
 }
 
@@ -946,8 +946,9 @@ a{
     display: flex;
     align-self: center;
     font-family: var(--content-font-family);
-    font-size: 1.5vh;
+    font-size: 2vh;
     font-weight: 200;
+    margin-bottom: 3vh;
 }
 
 .school_draw_Bottom{
@@ -968,7 +969,7 @@ a{
     align-items: center;
     justify-content: center;
     transition: color 0.15s;
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-decoration: none;
     font-weight: 200;
 }
@@ -988,7 +989,7 @@ a{
     align-items: center;
     justify-content: center;
     transition: color 0.15s;
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-decoration: none;
     font-weight: 200;
 }
