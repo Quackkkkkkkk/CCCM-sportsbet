@@ -116,6 +116,11 @@ background-size: 1800% 1800%;
     padding-top: 15vh;
 }
 
+.news_Link{
+    text-decoration: none;
+    color: black;
+}
+
 .main_News{
     height: 40vw;
     width: 40vw;
@@ -163,12 +168,14 @@ background-size: 1800% 1800%;
     margin-bottom: 1vh;
     margin-left: 1vh;
     margin-top: 0.5vh;
+    text-decoration: none;
 }
 
 .main_News_Sub_Text{
     font-family: var(--content-font-family);
     margin-bottom: 1vh;
     margin-left: 1vh;
+    text-decoration: none;
 }
 
 .main_News_Date_Text{
@@ -176,6 +183,7 @@ background-size: 1800% 1800%;
     color: var(--darkest-grey);
     align-self: end;
     margin-right: 1vh;
+    text-decoration: none;
 }
 
 .sub_News_Holder{
@@ -619,14 +627,19 @@ a{
 }
 
 .ladder_Table_Row{
-    border: 2px black solid;
     border-collapse: collapse;
     justify-content: center;
     align-content: center;
 }
 
+.ladder_Table_Row2{
+    border-collapse: collapse;
+    justify-content: center;
+    align-content: center;
+    background-color: #ffe070;
+}
+
 .ladder_Table_Data{
-    border: 2px black solid;
     border-collapse: collapse;
     min-width: 5vw;
     height: 5vh;
@@ -636,7 +649,6 @@ a{
 }
 
 .ladder_Table_School_Data{
-    border: 2px black solid;
     border-collapse: collapse;
     width: 12vw;
     height: 5vh;
@@ -646,7 +658,7 @@ a{
 }
 
 .ladder_Table{
-    border: 2px black solid;
+    border: 0.15vh black solid;
     border-collapse: collapse;
     justify-self: center;
     font-family: var(--content-font-family);
@@ -811,6 +823,12 @@ a{
     border: 0;
     font-family: var(--content-font-family);
     font-size: 2.5vh;
+    transition: color 0.15s;
+}
+
+.school_Drop:hover{
+    color: var(--toggle-hover-accent-color);
+    transition: color 0.15s;
 }
 
 .school_Title{
@@ -998,6 +1016,55 @@ a{
     transition: color 0.15s;
     color: var(--toggle-hover-accent-color);
 }
+
+.news_Holder{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    align-items: space-between;
+    justify-items: space-between;
+    width: 90vw;
+    height: 120vh;
+}
+
+.news_Img{
+    display: flex;
+    height: 35vw;
+    width: 40vw;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2vh;
+}
+
+.news_Text{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    margin-left: 5vw;
+}
+
+.news_Title_Text{
+    display: flex;
+    font-size: 5vh;
+    font-weight: 750;
+    flex-wrap: wrap;
+    width: 45vw;
+    margin-bottom: 5vh;
+}
+
+.news_Sub_Text{
+    display: flex;
+    font-size: 2vh;
+    font-weight: 400;
+    flex-wrap: wrap;
+    width: 45vw;
+    letter-spacing: 0.04vh;
+    word-spacing: 0.5vh;
+    line-height: 3vh;
+}
+
 
 
 
